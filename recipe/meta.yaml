@@ -21,12 +21,12 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - matplotlib-base>=3.8
-    - numpy>=1.26
-    - pandas>=2.1
-    - scipy>=1.11
-    - seaborn>=0.13
-    - fpdf2>=2.5
+    - matplotlib-base >=3.8
+    - numpy >=1.26
+    - pandas >=2.1
+    - scipy >=1.11
+    - seaborn >=0.13
+    - fpdf2 >=2.5
     - requests
     - tqdm
 
