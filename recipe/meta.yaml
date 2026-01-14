@@ -20,20 +20,22 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - biopython ==1.78.*
-    - matplotlib-base ==3.8.*
-    - numpy ==1.26.*
-    - pandas ==2.1.*
     - python >={{ python_min }}
-    - requests ==2.31.*
-    - scipy ==1.11.*
-    - seaborn ==0.13.*
+    - matplotlib-base>=3.8
+    - numpy>=1.26
+    - pandas>=2.1
+    - scipy>=1.11
+    - seaborn>=0.13
+    - fpdf2>=2.5
+    - requests
+    - tqdm
 
 test:
   imports:
     - kstar
     - kstar.random_experiments
     - kstar.analysis
+    - kstar.dataset_processing
   commands:
     - pip check
   requires:
@@ -49,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - knaegle
+    - srcrowl
